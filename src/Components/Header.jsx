@@ -14,7 +14,7 @@ function Header({cartItems}) {
                     </div>
                     <div className=" searchInput mobile:w-[90%] mobile:ml-[-15px] m flex border-[2px] border-solid border-lightgrey rounded-md items-center ml-[10px] p-[5px] mobile:p-[1px] focus-within:border-[#8a4af3] transition-all">
                         <input className='input outline-none mobile:w-[70%]' type="text" />
-                        <Search />
+                        search
                     </div>
                 </div>
                 <div className='center text-center flex-1 font-bold text-lg mobile:text-sm ' ><Link to="/">SESAW</Link> </div>
@@ -22,9 +22,9 @@ function Header({cartItems}) {
                     <div className={rightStyle}><Link to="/register">Register</Link></div>
                     <div className={rightStyle}><Link to="/login">Sign in</Link></div>
                     <div>
-                        <Badge badgeContent={cartItems} overlap="rectangular" color="primary">
+                    <i class="fa-solid fa-certificate">
                             <Link to="/cart"><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /></Link>
-                        </Badge>
+                    </i>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-import { AddShoppingCartOutlined } from '@material-ui/icons'
 import React, { useState } from 'react'
 
 function Product({ item, index, cartItems, setCartItems }) {
@@ -28,7 +27,7 @@ function Product({ item, index, cartItems, setCartItems }) {
                             <option value="XL">XL</option>
                         </select>
                     </span>
-                    <AddShoppingCartOutlined onClick={(e) => setCartItems(cartItems += 1)} className='text-black ml-[5px] mr-2' />
+                    {/* <AddShoppingCartOutlined onClick={(e) => setCartItems(cartItems += 1)} className='text-black ml-[5px] mr-2' /> */}
                 </div>
             </div>
         </div>

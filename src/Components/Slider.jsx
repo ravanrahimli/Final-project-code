@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { SliderApi } from '../apifolder/SliderApi'
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
 
 function Slider() {
 
@@ -26,7 +29,7 @@ function Slider() {
         <div className='parentDiv mt-0 h-[540px] bg-white flex items-center justify-between'>
             {/* LEFT ARROW  */}
             <div className="leftarrow rounded-full bg-grey flex justify-center items-center shadow-sm hover:cursor-pointer">
-                <ArrowLeftOutlined onClick={prevSlide} style={{ fontSize: "40px"  }} className='' />
+                <ArrowLeftIcon onClick={prevSlide} style={{ fontSize: "40px"  }} className='' />
             </div>
             {/* SLIDER  */}
             {slides.map((slide, index) => {
@@ -44,7 +47,7 @@ function Slider() {
             )}
             {/* RIGHT ARROW  */}
             <div className="leftarrow rounded-full bg-grey flex justify-center items-center shadow-sm hover:cursor-pointer">
-                <ArrowRightOutlined onClick={nextSlide} style={{ fontSize: "40px" }} />
+                <ArrowRightIcon onClick={nextSlide} style={{ fontSize: "40px" }} />
             </div>
         </div>
     )

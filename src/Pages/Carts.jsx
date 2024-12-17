@@ -1,11 +1,12 @@
 import Cart from "../Components/Cart"
-import Navbar from "../Components/Navbar"
+
 import Footer from "../Components/Footer"
+import Header from "../Components/Header"
 
 function Carts() {
   return (
     <div>
-        <Navbar/>
+        <Header/>
         <Cart/>
         <Footer/>
     </div>
